@@ -1,0 +1,77 @@
+:root {
+  --bg-light: #f0f0f0;
+  --text-light: #333;
+  --bg-dark:  #222;
+  --text-dark: #eee;
+  --accent:    #0066ff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#clock {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin: 1rem 0;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle input {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  background: #ccc;
+  border-radius: 12px;
+  margin-right: .5rem;
+  transition: background 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+input:checked + .slider {
+  background: var(--accent);
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+.label-text {
+  font-size: .9rem;
+}
