@@ -38,7 +38,13 @@ A simple, responsive digital clock built with pure HTML, CSS custom properties, 
 
 - **HTML5**  
 - **CSS3** (Custom Properties, Transitions)  
-- **JavaScript** (ES6+)  
+- **JavaScript** (ES6+) 
+
+---
+
+## Preview
+
+- [Live Demo](https://codewithoyem.github.io/digital_clock-100daysofcode/)
 
 ---
 
